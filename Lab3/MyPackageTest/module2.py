@@ -1,15 +1,11 @@
 from deep_translator import GoogleTranslator
 from langdetect import detect,detect_langs
-
 def TransLate(text: str, scr: str, dest: str):
     try:
-        # Переклад тексту на вказану мову
         translated_text = GoogleTranslator(source=scr, target=dest).translate(text)
         return translated_text
     except Exception as e:
         return str(e)
-
-
 def LangDetect(text: str, set: str = "all"):
     detected_langs = detect_langs(text)
     primary_detection = detected_langs[0]
@@ -25,15 +21,12 @@ def LangDetect(text: str, set: str = "all"):
     else:
         return "Неправильний параметр set"
 
-
 def CodeLang(lang: str):
     try:
         detected_lang = detect(lang)
         return detected_lang
     except:
         return "Мова не знайдена"
-
-
 
 def LanguageList(out: str = "screen", text: str = None):
     header = "N Language      ISO-639 code Text"
@@ -58,4 +51,3 @@ def LanguageList(out: str = "screen", text: str = None):
         return f"Таблиця збережена у файлі: {filename} \n Ok"
     else:
         return "Неправильний параметр out"
-

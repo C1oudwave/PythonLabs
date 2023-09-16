@@ -9,7 +9,6 @@ def read_config(config_file):
     except Exception as e:
         print(f"Помилка при зчитуванні конфігураційного файлу: {e}")
         return None
-
 def process_text(config):
     try:
         source_file = config["source_file"]
@@ -22,33 +21,30 @@ def process_text(config):
         with open(source_file, "r", encoding="utf-8") as file:
             text = file.read()
 
-        # Зберігаємо реальний розмір тексту
+
         original_text_length = len(text)
         words = text.split()
         sentences = text.split(".")
 
-        # Отримайте інформацію про текст без обмежень (кількість символів, слів, речень)
+
         print("Кількість символів (Без обмеження):", original_text_length)
         print("Кількість слів (Без обмеження):", len(words))
         print("Кількість речень (Без обмеження):", len(sentences))
 
-        # Обмеження кількості символів
+
         if original_text_length > max_characters:
             text = text[:max_characters]
 
-        # Обмеження кількості слів
+
         if len(words) > max_words:
             words = words[:max_words]
             text = ' '.join(words)
 
-        # Обмеження кількості речень
+
         if len(sentences) > max_sentences:
             sentences = sentences[:max_sentences]
             text = '. '.join(sentences)
 
-
-
-        # Отримайте інформацію про текст (кількість символів, слів, речень) з обмеженнями
         text_length = len(text)
         word_count = len(words)
         sentence_count = len(sentences)
@@ -58,7 +54,6 @@ def process_text(config):
         print("Кількість речень (обмежено):", sentence_count)
         print("Мова тексу:", LangDetect(text, "lang"))
 
-        # Виконайте переклад тексту
         translated_text = TransLate(text, "auto", target_language)
 
         if output_type == "screen":

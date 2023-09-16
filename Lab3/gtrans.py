@@ -1,8 +1,6 @@
 from MyPackageTest.module1 import *
-
 text = "Доброго ранку"
 
-# Визначення мови тексту
 detected_lang = LangDetect(text, set="lang")
 print(f"Мова тексту: {detected_lang}")
 
