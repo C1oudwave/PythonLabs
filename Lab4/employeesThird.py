@@ -10,7 +10,7 @@ def calculate_age(birthdate):
     return age
 
 def read_csv_file(file_path):
-    try:
+    try: 
         data = pd.read_csv(file_path, encoding='cp1251')
         return data
     except FileNotFoundError:
