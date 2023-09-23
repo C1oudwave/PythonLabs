@@ -1,111 +1,111 @@
-+-----+-----------------------+--------------+-----------------------------------------------+
-|  N  |       Language        | ISO-639 code |                     Text                      |
-+-----+-----------------------+--------------+-----------------------------------------------+
-|  1  |       afrikaans       |      af      |                  Goeie more                   |
-|  2  |       albanian        |      sq      |                  Miremengjes                  |
-|  3  |        amharic        |      am      |                   ምልካም እድል                    |
-|  4  |        arabic         |      ar      |                  صباح الخير                   |
-|  5  |       armenian        |      hy      |                  Բարի առավոտ                  |
-|  6  |      azerbaijani      |      az      |                Sabahınız xeyir                |
-|  7  |        basque         |      eu      |                    Egun on                    |
-|  8  |      belarusian       |      be      |                 Добрай раніцы                 |
-|  9  |        bengali        |      bn      |                    সুপ্রভাত                     |
-| 10  |        bosnian        |      bs      |                  Dobro jutro                  |
-| 11  |       bulgarian       |      bg      |                  Добро утро                   |
-| 12  |        catalan        |      ca      |                    Bon dia                    |
-| 13  |        cebuano        |     ceb      |                Maayong buntag                 |
-| 14  |       chichewa        |      ny      |                M'mawa wabwino                 |
-| 15  | chinese (simplified)  |    zh-cn     |                    早上好                     |
-| 16  | chinese (traditional) |    zh-tw     |                     早安                      |
-| 17  |       corsican        |      co      |                  Bonghjornu                   |
-| 18  |       croatian        |      hr      |                  Dobro jutro                  |
-| 19  |         czech         |      cs      |                  Dobré ráno                   |
-| 20  |        danish         |      da      |                  God morgen                   |
-| 21  |         dutch         |      nl      |                  Goedemorgen                  |
-| 22  |        english        |      en      |                 Good morning                  |
-| 23  |       esperanto       |      eo      |                 Bonan matenon                 |
-| 24  |       estonian        |      et      |                Tere hommikust                 |
-| 25  |       filipino        |      tl      |                Magandang umaga                |
-| 26  |        finnish        |      fi      |                Hyvää huomenta                 |
-| 27  |        french         |      fr      |                    Bonjour                    |
-| 28  |        frisian        |      fy      |                    Goedei                     |
-| 29  |       galician        |      gl      |                   Bos días                    |
-| 30  |       georgian        |      ka      |                Დილა მშვიდობისა                |
-| 31  |        german         |      de      |                 Guten Morgen                  |
-| 32  |         greek         |      el      |                   Καλημέρα                    |
-| 33  |       gujarati        |      gu      |                    સુપ્રભાત                     |
-| 34  |    haitian creole     |      ht      |                    Bonjou                     |
-| 35  |         hausa         |      ha      |                   Ina kwana                   |
-| 36  |       hawaiian        |     haw      |                Aloha kakahiaka                |
-| 37  |        hebrew         |      iw      | _ssl.c:985: The handshake operation timed out |
-| 38  |        hebrew         |      he      |                   בוקר טוב                    |
-| 39  |         hindi         |      hi      |                   शुभ प्रभात                    |
-| 40  |         hmong         |     hmn      |              Nyob zoo sawv ntxov              |
-| 41  |       hungarian       |      hu      |              Jó reggelt kívánok               |
-| 42  |       icelandic       |      is      |                 Góðan daginn                  |
-| 43  |         igbo          |      ig      |                   Ụtụtụ ọma                   |
-| 44  |      indonesian       |      id      |                 Selamat pagi                  |
-| 45  |         irish         |      ga      |                 Maidin mhaith                 |
-| 46  |        italian        |      it      |                  Buongiorno                   |
-| 47  |       japanese        |      ja      |                   おはよう                    |
-| 48  |       javanese        |      jw      |                 Sugeng enjing                 |
-| 49  |        kannada        |      kn      |                    ಶುಭೋದಯ                    |
-| 50  |        kazakh         |      kk      |                  Қайырлы таң                  |
-| 51  |         khmer         |      km      |                    អរុណ​សួស្តី                     |
-| 52  |        korean         |      ko      |                좋은 아침이에요                |
-| 53  |  kurdish (kurmanji)   |      ku      |                  Beyanî baş                   |
-| 54  |        kyrgyz         |      ky      |                 Кайырдуу таң                  |
-| 55  |          lao          |      lo      |                 ສະ​ບາຍ​ດີ​ຕອນ​ເຊົ້າ                  |
-| 56  |         latin         |      la      |                  Bonum mane                   |
-| 57  |        latvian        |      lv      |                    Labrīt                     |
-| 58  |      lithuanian       |      lt      |                  Labas rytas                  |
-| 59  |     luxembourgish     |      lb      |                  Gudde Moien                  |
-| 60  |      macedonian       |      mk      |                  Добро утро                   |
-| 61  |       malagasy        |      mg      |                    Salama                     |
-| 62  |         malay         |      ms      |                 Selamat Pagi                  |
-| 63  |       malayalam       |      ml      |                    സുപ്രഭാതം                    |
-| 64  |        maltese        |      mt      |                     Bongu                     |
-| 65  |         maori         |      mi      |                   Ata mārie                   |
-| 66  |        marathi        |      mr      |                   शुभ प्रभात                    |
-| 67  |       mongolian       |      mn      |                 Өглөөний мэнд                 |
-| 68  |   myanmar (burmese)   |      my      |                 မင်္ဂလာနံနက်ခင်းပါ                 |
-| 69  |        nepali         |      ne      |                  शुभ - प्रभात                   |
-| 70  |       norwegian       |      no      |                  God morgen                   |
-| 71  |         odia          |      or      |                    ଶୁଭ ସକାଳ                    |
-| 72  |        pashto         |      ps      |                 سهار مو پخیر                  |
-| 73  |        persian        |      fa      |                   صبح بخیر                    |
-| 74  |        polish         |      pl      |                  Dzień dobry                  |
-| 75  |      portuguese       |      pt      |                    Bom dia                    |
-| 76  |        punjabi        |      pa      |                    ਸ਼ੁਭ ਸਵੇਰ                     |
-| 77  |       romanian        |      ro      |                Buna dimineata                 |
-| 78  |        russian        |      ru      |                 Доброго утра                  |
-| 79  |        samoan         |      sm      |                Manuia le taeao                |
-| 80  |     scots gaelic      |      gd      |                 Madainn mhath                 |
-| 81  |        serbian        |      sr      |                  Добро јутро                  |
-| 82  |        sesotho        |      st      |                   Khotsong                    |
-| 83  |         shona         |      sn      |              Mangwanani akanaka               |
-| 84  |        sindhi         |      sd      |                  صبح جو سلام                  |
-| 85  |        sinhala        |      si      |                   සුභ උදෑසනක්                   |
-| 86  |        slovak         |      sk      |                  Dobré ráno                   |
-| 87  |       slovenian       |      sl      |                  Dobro jutro                  |
-| 88  |        somali         |      so      |                Subax wanaagsan                |
-| 89  |        spanish        |      es      |                   Buen día                    |
-| 90  |       sundanese       |      su      |                Wilujeng énjing                |
-| 91  |        swahili        |      sw      |               Habari za asubuhi               |
-| 92  |        swedish        |      sv      |                  God morgon                   |
-| 93  |         tajik         |      tg      |                 Субҳ ба хайр                  |
-| 94  |         tamil         |      ta      |                  காலை வணக்கம்                   |
-| 95  |        telugu         |      te      |                    శుభోదయం                     |
-| 96  |         thai          |      th      |                  สวัสดีตอนเช้า                   |
-| 97  |        turkish        |      tr      |                   Günaydın                    |
-| 98  |       ukrainian       |      uk      |                 Доброго ранку                 |
-| 99  |         urdu          |      ur      |                   صبح بخیر                    |
-| 100 |        uyghur         |      ug      |                خەيرلىك ئەتىگەن                |
-| 101 |         uzbek         |      uz      |                  Xayrli tong                  |
-| 102 |      vietnamese       |      vi      |                Chào buổi sáng                 |
-| 103 |         welsh         |      cy      |                    Bore Da                    |
-| 104 |         xhosa         |      xh      |                     Mholo                     |
-| 105 |        yiddish        |      yi      |                   גוט מארגן                   |
-| 106 |        yoruba         |      yo      |                    E kaaro                    |
-| 107 |         zulu          |      zu      |                   Sawubona                    |
-+-----+-----------------------+--------------+-----------------------------------------------+
++-----+-----------------------+--------------+---------------------+
+|  N  |       Language        | ISO-639 code |        Text         |
++-----+-----------------------+--------------+---------------------+
+|  1  |       afrikaans       |      af      |     Goeie more      |
+|  2  |       albanian        |      sq      |     Miremengjes     |
+|  3  |        amharic        |      am      |      ምልካም እድል       |
+|  4  |        arabic         |      ar      |     صباح الخير      |
+|  5  |       armenian        |      hy      |     Բարի առավոտ     |
+|  6  |      azerbaijani      |      az      |   Sabahınız xeyir   |
+|  7  |        basque         |      eu      |       Egun on       |
+|  8  |      belarusian       |      be      |    Добрай раніцы    |
+|  9  |        bengali        |      bn      |       সুপ্রভাত        |
+| 10  |        bosnian        |      bs      |     Dobro jutro     |
+| 11  |       bulgarian       |      bg      |     Добро утро      |
+| 12  |        catalan        |      ca      |       Bon dia       |
+| 13  |        cebuano        |     ceb      |   Maayong buntag    |
+| 14  |       chichewa        |      ny      |   M'mawa wabwino    |
+| 15  | chinese (simplified)  |    zh-cn     |       早上好        |
+| 16  | chinese (traditional) |    zh-tw     |        早安         |
+| 17  |       corsican        |      co      |     Bonghjornu      |
+| 18  |       croatian        |      hr      |     Dobro jutro     |
+| 19  |         czech         |      cs      |     Dobré ráno      |
+| 20  |        danish         |      da      |     God morgen      |
+| 21  |         dutch         |      nl      |     Goedemorgen     |
+| 22  |        english        |      en      |    Good morning     |
+| 23  |       esperanto       |      eo      |    Bonan matenon    |
+| 24  |       estonian        |      et      |   Tere hommikust    |
+| 25  |       filipino        |      tl      |   Magandang umaga   |
+| 26  |        finnish        |      fi      |   Hyvää huomenta    |
+| 27  |        french         |      fr      |       Bonjour       |
+| 28  |        frisian        |      fy      |       Goedei        |
+| 29  |       galician        |      gl      |      Bos días       |
+| 30  |       georgian        |      ka      |   Დილა მშვიდობისა   |
+| 31  |        german         |      de      |    Guten Morgen     |
+| 32  |         greek         |      el      |      Καλημέρα       |
+| 33  |       gujarati        |      gu      |       સુપ્રભાત        |
+| 34  |    haitian creole     |      ht      |       Bonjou        |
+| 35  |         hausa         |      ha      |      Ina kwana      |
+| 36  |       hawaiian        |     haw      |   Aloha kakahiaka   |
+| 37  |        hebrew         |      iw      |      בוקר טוב       |
+| 38  |        hebrew         |      he      |      בוקר טוב       |
+| 39  |         hindi         |      hi      |      शुभ प्रभात       |
+| 40  |         hmong         |     hmn      | Nyob zoo sawv ntxov |
+| 41  |       hungarian       |      hu      | Jó reggelt kívánok  |
+| 42  |       icelandic       |      is      |    Góðan daginn     |
+| 43  |         igbo          |      ig      |      Ụtụtụ ọma      |
+| 44  |      indonesian       |      id      |    Selamat pagi     |
+| 45  |         irish         |      ga      |    Maidin mhaith    |
+| 46  |        italian        |      it      |     Buongiorno      |
+| 47  |       japanese        |      ja      |      おはよう       |
+| 48  |       javanese        |      jw      |    Sugeng enjing    |
+| 49  |        kannada        |      kn      |       ಶುಭೋದಯ       |
+| 50  |        kazakh         |      kk      |     Қайырлы таң     |
+| 51  |         khmer         |      km      |       អរុណ​សួស្តី        |
+| 52  |        korean         |      ko      |   좋은 아침이에요   |
+| 53  |  kurdish (kurmanji)   |      ku      |     Beyanî baş      |
+| 54  |        kyrgyz         |      ky      |    Кайырдуу таң     |
+| 55  |          lao          |      lo      |    ສະ​ບາຍ​ດີ​ຕອນ​ເຊົ້າ     |
+| 56  |         latin         |      la      |     Bonum mane      |
+| 57  |        latvian        |      lv      |       Labrīt        |
+| 58  |      lithuanian       |      lt      |     Labas rytas     |
+| 59  |     luxembourgish     |      lb      |     Gudde Moien     |
+| 60  |      macedonian       |      mk      |     Добро утро      |
+| 61  |       malagasy        |      mg      |       Salama        |
+| 62  |         malay         |      ms      |    Selamat Pagi     |
+| 63  |       malayalam       |      ml      |       സുപ്രഭാതം       |
+| 64  |        maltese        |      mt      |        Bongu        |
+| 65  |         maori         |      mi      |      Ata mārie      |
+| 66  |        marathi        |      mr      |      शुभ प्रभात       |
+| 67  |       mongolian       |      mn      |    Өглөөний мэнд    |
+| 68  |   myanmar (burmese)   |      my      |    မင်္ဂလာနံနက်ခင်းပါ    |
+| 69  |        nepali         |      ne      |     शुभ - प्रभात      |
+| 70  |       norwegian       |      no      |     God morgen      |
+| 71  |         odia          |      or      |       ଶୁଭ ସକାଳ       |
+| 72  |        pashto         |      ps      |    سهار مو پخیر     |
+| 73  |        persian        |      fa      |      صبح بخیر       |
+| 74  |        polish         |      pl      |     Dzień dobry     |
+| 75  |      portuguese       |      pt      |       Bom dia       |
+| 76  |        punjabi        |      pa      |       ਸ਼ੁਭ ਸਵੇਰ        |
+| 77  |       romanian        |      ro      |   Buna dimineata    |
+| 78  |        russian        |      ru      |    Доброго утра     |
+| 79  |        samoan         |      sm      |   Manuia le taeao   |
+| 80  |     scots gaelic      |      gd      |    Madainn mhath    |
+| 81  |        serbian        |      sr      |     Добро јутро     |
+| 82  |        sesotho        |      st      |      Khotsong       |
+| 83  |         shona         |      sn      | Mangwanani akanaka  |
+| 84  |        sindhi         |      sd      |     صبح جو سلام     |
+| 85  |        sinhala        |      si      |      සුභ උදෑසනක්      |
+| 86  |        slovak         |      sk      |     Dobré ráno      |
+| 87  |       slovenian       |      sl      |     Dobro jutro     |
+| 88  |        somali         |      so      |   Subax wanaagsan   |
+| 89  |        spanish        |      es      |      Buen día       |
+| 90  |       sundanese       |      su      |   Wilujeng énjing   |
+| 91  |        swahili        |      sw      |  Habari za asubuhi  |
+| 92  |        swedish        |      sv      |     God morgon      |
+| 93  |         tajik         |      tg      |    Субҳ ба хайр     |
+| 94  |         tamil         |      ta      |     காலை வணக்கம்      |
+| 95  |        telugu         |      te      |       శుభోదయం        |
+| 96  |         thai          |      th      |     สวัสดีตอนเช้า      |
+| 97  |        turkish        |      tr      |      Günaydın       |
+| 98  |       ukrainian       |      uk      |    Доброго ранку    |
+| 99  |         urdu          |      ur      |      صبح بخیر       |
+| 100 |        uyghur         |      ug      |   خەيرلىك ئەتىگەن   |
+| 101 |         uzbek         |      uz      |     Xayrli tong     |
+| 102 |      vietnamese       |      vi      |   Chào buổi sáng    |
+| 103 |         welsh         |      cy      |       Bore Da       |
+| 104 |         xhosa         |      xh      |        Mholo        |
+| 105 |        yiddish        |      yi      |      גוט מארגן      |
+| 106 |        yoruba         |      yo      |       E kaaro       |
+| 107 |         zulu          |      zu      |      Sawubona       |
++-----+-----------------------+--------------+---------------------+
