@@ -20,10 +20,11 @@ with open('employees.csv', 'w', newline='') as csvfile:
 
     for _ in range(2000):
         gender = random.choice(['Чоловік', 'Жінка'])
+        last_name = fake.last_name()  # Генеруємо прізвище
         full_name = fake.name_male() if gender == 'Чоловік' else fake.name_female()
         full_name = full_name.split()
-        first_name, last_name = full_name[0], full_name[-1]
-        middle_name = full_name[1] if len(full_name) > 2 else ""
+        first_name = full_name[0]
+        middle_name = full_name[1] if len(full_name) > 1 else ""
         if not middle_name:
             middle_name = None
         birthdate = random_birthdate()
@@ -46,4 +47,4 @@ with open('employees.csv', 'w', newline='') as csvfile:
             'Email': email
         })
 
-print("Готово! Файл employees.csv создан.")
+print("Готово! Файл employees.csv створено.")
