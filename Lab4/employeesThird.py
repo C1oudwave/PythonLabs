@@ -1,5 +1,13 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+from datetime import datetime
+
+# Определение функции для вычисления возраста
+def calculate_age(birthdate):
+    today = datetime.now()
+    birthdate = datetime.strptime(birthdate, "%Y-%m-%d")
+    age = today.year - birthdate.year - ((today.month, today.day) < (birthdate.month, birthdate.day))
+    return age
 
 def read_csv_file(file_path):
     try:
@@ -25,13 +33,16 @@ def analyze_gender(data):
 
 def analyze_age_categories(data):
     if data is not None:
-        age_bins = [0, 18, 45, 70, 200]
+        # Вычисление возраста и добавление его в DataFrame
+        data['Вік'] = data['Дата Народження'].apply(calculate_age)
+
+        age_bins = [0, 18, 45, 70, data['Вік'].max()]
         age_labels = ["Молодші 18", "18-45", "45-70", "Старші 70"]
 
-        data['Вікова категорія'] = pd.cut(data['Дата Народження'], bins=age_bins, labels=age_labels)
+        data['Вікова категорія'] = pd.cut(data['Вік'], bins=age_bins, labels=age_labels)
 
         age_category_counts = data['Вікова категорія'].value_counts()
-        print("Кількість спіробітників по різній категорії:")
+        print("Кількість співробітників по різній категорії:")
         print(age_category_counts)
 
         age_category_counts.plot(kind='bar')
