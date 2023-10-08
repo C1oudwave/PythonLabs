@@ -1,0 +1,7 @@
+Це - приклад тексту для обробки програмою.
+Це перше речення. Інше речення теж є.
+Цей файл містить текст для вас.
+
+This is an example of text to be processed by the program.
+This is the first sentence. There is another sentence as well.
+This file contains the text for you.
