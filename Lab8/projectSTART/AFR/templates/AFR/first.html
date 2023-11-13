@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Orenda application</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h1 { color: blue; }
+        h2 { font-weight: bold; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .orenda-info {
+            font-style: italic;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Orenda application</h1>
+    <div class="orenda-info">Ваше ім'я та група</div>
+
+    <h2>Орендарі</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Код орендаря</th>
+                <th>Назва фірми</th>
+                <th>Керівник</th>
+                <th>Телефон</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for orendary in orendaries %}
+            <tr>
+                <td>{{ orendary.code }}</td>
+                <td>{{ orendary.firm_name }}</td>
+                <td>{{ orendary.director }}</td>
+                <td>{{ orendary.phone }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Приміщення</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Номер приміщення</th>
+                <th>Площа</th>
+                <th>Вартість оренди за 1м²</th>
+                <th>Поверх</th>
+                <th>Телефон в приміщенні</th>
+                <th>Оздоблення</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for primischennya in primischennyas %}
+            <tr>
+                <td>{{ primischennya.room_number }}</td>
+                <td>{{ primischennya.area }}</td>
+                <td>{{ primischennya.rent_cost_per_sqm }}</td>
+                <td>{{ primischennya.floor }}</td>
+                <td>{{ primischennya.phone_in_room|yesno:"Так,Ні" }}</td>
+                <td>{{ primischennya.get_decoration_display }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Оренда</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Номер договору</th>
+                <th>Дата початку дії</th>
+                <th>Тривалість (дні)</th>
+                <th>Мета оренди</th>
+                <th>Код орендаря</th>
+                <th>Номер приміщення</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for orenda in orendas %}
+            <tr>
+                <td>{{ orenda.contract_number }}</td>
+                <td>{{ orenda.start_date }}</td>
+                <td>{{ orenda.duration_days }}</td>
+                <td>{{ orenda.get_purpose_display }}</td>
+                <td>{{ orenda.orendary.code }}</td>
+                <td>{{ orenda.primischennya.room_number }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
