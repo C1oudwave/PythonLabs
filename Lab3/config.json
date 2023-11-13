@@ -1,8 +1,0 @@
-{
-  "source_file": "input.txt",
-  "target_language": "uk",
-  "output_type": "file",
-  "max_characters": 1500,
-  "max_words": 250,
-  "max_sentences": 5
-}
